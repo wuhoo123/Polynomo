@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		99A7C59726A8951200589758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59626A8951200589758 /* AppDelegate.swift */; };
 		99A7C59926A8951200589758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59826A8951200589758 /* SceneDelegate.swift */; };
-		99A7C59B26A8951200589758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59A26A8951200589758 /* ViewController.swift */; };
+		99A7C59B26A8951200589758 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59A26A8951200589758 /* EnterViewController.swift */; };
 		99A7C59E26A8951200589758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C59C26A8951200589758 /* Main.storyboard */; };
 		99A7C5A026A8951300589758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C59F26A8951300589758 /* Assets.xcassets */; };
 		99A7C5A326A8951300589758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C5A126A8951300589758 /* LaunchScreen.storyboard */; };
+		99A7C5AD26A89B3A00589758 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5AC26A89B3A00589758 /* HomeViewController.swift */; };
+		99A7C5B026A89F8900589758 /* LawManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5AF26A89F8900589758 /* LawManager.swift */; };
+		99A7C5B226A89F9C00589758 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B126A89F9C00589758 /* PostModel.swift */; };
+		99A7C5B426A89FBC00589758 /* UpcomingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B326A89FBC00589758 /* UpcomingData.swift */; };
+		99A7C5B626A89FD300589758 /* GetSpecificBillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B526A89FD300589758 /* GetSpecificBillData.swift */; };
+		99A7C5B826A8A01400589758 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B726A8A01400589758 /* Constant.swift */; };
+		99A7C5BB26A8A18F00589758 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B926A8A18F00589758 /* PostViewCell.swift */; };
+		99A7C5BC26A8A18F00589758 /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C5BA26A8A18F00589758 /* PostViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		99A7C59326A8951200589758 /* Polynomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polynomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A7C59626A8951200589758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A7C59826A8951200589758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		99A7C59A26A8951200589758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99A7C59A26A8951200589758 /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 		99A7C59D26A8951200589758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99A7C59F26A8951300589758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A7C5A226A8951300589758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99A7C5A426A8951300589758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A7C5AC26A89B3A00589758 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		99A7C5AF26A89F8900589758 /* LawManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawManager.swift; sourceTree = "<group>"; };
+		99A7C5B126A89F9C00589758 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		99A7C5B326A89FBC00589758 /* UpcomingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingData.swift; sourceTree = "<group>"; };
+		99A7C5B526A89FD300589758 /* GetSpecificBillData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpecificBillData.swift; sourceTree = "<group>"; };
+		99A7C5B726A8A01400589758 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		99A7C5B926A8A18F00589758 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostViewCell.swift; path = Polynomo/Controller/PostViewCell.swift; sourceTree = SOURCE_ROOT; };
+		99A7C5BA26A8A18F00589758 /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PostViewCell.xib; path = Polynomo/Controller/PostViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,45 @@
 			children = (
 				99A7C59626A8951200589758 /* AppDelegate.swift */,
 				99A7C59826A8951200589758 /* SceneDelegate.swift */,
-				99A7C59A26A8951200589758 /* ViewController.swift */,
-				99A7C59C26A8951200589758 /* Main.storyboard */,
+				99A7C5AE26A89F5C00589758 /* Model */,
+				99A7C5AA26A8984D00589758 /* Controller */,
+				99A7C5AB26A8985A00589758 /* View */,
 				99A7C59F26A8951300589758 /* Assets.xcassets */,
+				99A7C5B726A8A01400589758 /* Constant.swift */,
 				99A7C5A126A8951300589758 /* LaunchScreen.storyboard */,
 				99A7C5A426A8951300589758 /* Info.plist */,
 			);
 			path = Polynomo;
+			sourceTree = "<group>";
+		};
+		99A7C5AA26A8984D00589758 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99A7C59A26A8951200589758 /* EnterViewController.swift */,
+				99A7C5AC26A89B3A00589758 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99A7C5AB26A8985A00589758 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99A7C5B926A8A18F00589758 /* PostViewCell.swift */,
+				99A7C5BA26A8A18F00589758 /* PostViewCell.xib */,
+				99A7C59C26A8951200589758 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		99A7C5AE26A89F5C00589758 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99A7C5AF26A89F8900589758 /* LawManager.swift */,
+				99A7C5B126A89F9C00589758 /* PostModel.swift */,
+				99A7C5B326A89FBC00589758 /* UpcomingData.swift */,
+				99A7C5B526A89FD300589758 /* GetSpecificBillData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +174,7 @@
 			files = (
 				99A7C5A326A8951300589758 /* LaunchScreen.storyboard in Resources */,
 				99A7C5A026A8951300589758 /* Assets.xcassets in Resources */,
+				99A7C5BC26A8A18F00589758 /* PostViewCell.xib in Resources */,
 				99A7C59E26A8951200589758 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99A7C59B26A8951200589758 /* ViewController.swift in Sources */,
+				99A7C5B626A89FD300589758 /* GetSpecificBillData.swift in Sources */,
+				99A7C5B426A89FBC00589758 /* UpcomingData.swift in Sources */,
+				99A7C5B826A8A01400589758 /* Constant.swift in Sources */,
+				99A7C59B26A8951200589758 /* EnterViewController.swift in Sources */,
+				99A7C5BB26A8A18F00589758 /* PostViewCell.swift in Sources */,
+				99A7C5B226A89F9C00589758 /* PostModel.swift in Sources */,
 				99A7C59726A8951200589758 /* AppDelegate.swift in Sources */,
 				99A7C59926A8951200589758 /* SceneDelegate.swift in Sources */,
+				99A7C5AD26A89B3A00589758 /* HomeViewController.swift in Sources */,
+				99A7C5B026A89F8900589758 /* LawManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
