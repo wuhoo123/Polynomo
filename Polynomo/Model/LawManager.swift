@@ -117,9 +117,10 @@ struct LawManager {
                 
             let decodedDataGetSpecific = try decoder.decode(GetSpecificBillData.self, from: lawData)
             let short_title = decodedDataGetSpecific.results[0].short_title
+            let title = decodedDataGetSpecific.results[0].title
             let summary = decodedDataGetSpecific.results[0].summary
             let sponsor = decodedDataGetSpecific.results[0].sponsor
-            let postItem = PostModel(shortTitle: short_title, summary: summary, billSponsor: sponsor)
+            let postItem = PostModel(title: title, shortTitle: short_title, summary: summary, billSponsor: sponsor)
             post.append(postItem)
             //print(post)
             return post

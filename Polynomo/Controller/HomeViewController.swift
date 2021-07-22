@@ -101,4 +101,12 @@ extension HomeViewController: UITableViewDelegate {
         performSegue(withIdentifier: "FeedToPost", sender: self)
         print(indexPath.row)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "FeedToPost" {
+            if let destination = segue.destination as? DetailViewController{
+                destination.post = post[(tableView.indexPathForSelectedRow?.row)!]
+            }
+        }
+    }
 }

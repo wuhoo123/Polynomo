@@ -5,6 +5,7 @@
 //  Created by William Wu on 7/21/21.
 //
 
+import Foundation
 import UIKit
 
 class PostViewCell: UITableViewCell {
@@ -28,4 +29,8 @@ class PostViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func commentButtonPressed(_ sender: Any) {
+        // performSegue(withIdentifier: "FeedToPost", sender: HomeViewController)
+
+    }
 }

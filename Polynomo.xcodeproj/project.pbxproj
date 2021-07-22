@@ -21,6 +21,7 @@
 		99A7C5B826A8A01400589758 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B726A8A01400589758 /* Constant.swift */; };
 		99A7C5BB26A8A18F00589758 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B926A8A18F00589758 /* PostViewCell.swift */; };
 		99A7C5BC26A8A18F00589758 /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C5BA26A8A18F00589758 /* PostViewCell.xib */; };
+		99A7C5BE26A9CF1200589758 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5BD26A9CF1200589758 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		99A7C5B726A8A01400589758 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		99A7C5B926A8A18F00589758 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostViewCell.swift; path = Polynomo/Controller/PostViewCell.swift; sourceTree = SOURCE_ROOT; };
 		99A7C5BA26A8A18F00589758 /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PostViewCell.xib; path = Polynomo/Controller/PostViewCell.xib; sourceTree = SOURCE_ROOT; };
+		99A7C5BD26A9CF1200589758 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				99A7C59A26A8951200589758 /* EnterViewController.swift */,
 				99A7C5AC26A89B3A00589758 /* HomeViewController.swift */,
+				99A7C5BD26A9CF1200589758 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A7C5BE26A9CF1200589758 /* DetailViewController.swift in Sources */,
 				99A7C5B626A89FD300589758 /* GetSpecificBillData.swift in Sources */,
 				99A7C5B426A89FBC00589758 /* UpcomingData.swift in Sources */,
 				99A7C5B826A8A01400589758 /* Constant.swift in Sources */,

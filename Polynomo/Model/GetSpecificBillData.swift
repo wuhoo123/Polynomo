@@ -15,6 +15,7 @@ struct GetSpecificBillData: Codable {
 
 struct ResultsGetSpecificBillData: Codable {
     let sponsor: String
+    let title: String
     let short_title: String
     let summary: String
 }

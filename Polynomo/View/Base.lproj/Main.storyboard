@@ -74,20 +74,59 @@
             </objects>
             <point key="canvasLocation" x="905.79710144927549" y="77.678571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="pJJ-Tf-VVk">
             <objects>
-                <viewController id="uib-7y-gZq" sceneMemberID="viewController">
+                <viewController id="uib-7y-gZq" customClass="DetailViewController" customModule="Polynomo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nRv-XG-u6l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGc-bG-zhr">
+                                <rect key="frame" x="15" y="74" width="384" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44F-ts-VCY">
+                                <rect key="frame" x="15" y="164.5" width="384" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivV-UK-12C">
+                                <rect key="frame" x="15" y="113" width="384" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qPD-ut-36V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ivV-UK-12C" firstAttribute="top" secondItem="bGc-bG-zhr" secondAttribute="bottom" constant="15" id="D1B-OM-h11"/>
+                            <constraint firstItem="qPD-ut-36V" firstAttribute="trailing" secondItem="ivV-UK-12C" secondAttribute="trailing" constant="15" id="MYl-j1-jty"/>
+                            <constraint firstItem="qPD-ut-36V" firstAttribute="trailing" secondItem="44F-ts-VCY" secondAttribute="trailing" constant="15" id="QXY-AI-oPE"/>
+                            <constraint firstItem="bGc-bG-zhr" firstAttribute="top" secondItem="qPD-ut-36V" secondAttribute="top" constant="30" id="QYh-lP-iwq"/>
+                            <constraint firstItem="qPD-ut-36V" firstAttribute="trailing" secondItem="bGc-bG-zhr" secondAttribute="trailing" constant="15" id="R9I-aW-eZ8"/>
+                            <constraint firstItem="bGc-bG-zhr" firstAttribute="leading" secondItem="qPD-ut-36V" secondAttribute="leading" constant="15" id="T6W-G6-OSw"/>
+                            <constraint firstItem="bGc-bG-zhr" firstAttribute="centerX" secondItem="nRv-XG-u6l" secondAttribute="centerX" id="ayr-w7-GTe"/>
+                            <constraint firstItem="44F-ts-VCY" firstAttribute="centerX" secondItem="nRv-XG-u6l" secondAttribute="centerX" id="koI-yz-Uih"/>
+                            <constraint firstItem="44F-ts-VCY" firstAttribute="leading" secondItem="qPD-ut-36V" secondAttribute="leading" constant="15" id="nNL-E7-1Cr"/>
+                            <constraint firstItem="ivV-UK-12C" firstAttribute="centerX" secondItem="nRv-XG-u6l" secondAttribute="centerX" id="pNP-wC-G9M"/>
+                            <constraint firstItem="44F-ts-VCY" firstAttribute="top" secondItem="ivV-UK-12C" secondAttribute="bottom" constant="30" id="stb-TM-2DE"/>
+                            <constraint firstItem="ivV-UK-12C" firstAttribute="leading" secondItem="qPD-ut-36V" secondAttribute="leading" constant="15" id="uul-oe-9t5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="longTitleText" destination="ivV-UK-12C" id="z3L-tI-6Y8"/>
+                        <outlet property="shortTitleText" destination="bGc-bG-zhr" id="W3Q-ui-iR8"/>
+                        <outlet property="summaryText" destination="44F-ts-VCY" id="ZBE-eV-FTV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZL-8M-4vq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="78"/>
+            <point key="canvasLocation" x="1969.5652173913045" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
