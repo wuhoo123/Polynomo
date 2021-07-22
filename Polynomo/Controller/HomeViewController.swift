@@ -27,9 +27,9 @@ class HomeViewController: UIViewController {
         // Register the xib file to those cells.
         tableView.register(UINib(nibName: Constant.cellNibName, bundle: nil), forCellReuseIdentifier: Constant.cellIdentifier)
         
-        self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 200 // replace 50 with whatever height you require
-        self.tableView.reloadData()
+//        self.tableView.rowHeight = UITableView.automaticDimension
+//        self.tableView.estimatedRowHeight = 200 // replace 50 with whatever height you require
+//        self.tableView.reloadData()
         
         lawManager.fetchUpcoming(1)
         loadPosts()
@@ -88,11 +88,9 @@ extension HomeViewController: UITableViewDataSource {
         else {
             cell.shortSummaryText.text = postData.summary
         }
-        
-        
         return cell
-        
     }
+    
     
 }
 
@@ -100,6 +98,7 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "FeedToPost", sender: self)
         print(indexPath.row)
     }
 }

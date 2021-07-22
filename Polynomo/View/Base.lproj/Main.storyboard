@@ -32,7 +32,7 @@
                     </view>
                     <connections>
                         <outlet property="brandName" destination="HxK-Im-PPh" id="Xxf-ro-T76"/>
-                        <segue destination="KUL-qj-FUO" kind="presentation" identifier="EnterToFeed" modalPresentationStyle="fullScreen" id="nlD-2e-hh2"/>
+                        <segue destination="KUL-qj-FUO" kind="presentation" identifier="EnterToFeed" animates="NO" modalPresentationStyle="fullScreen" id="nlD-2e-hh2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="tUy-gd-ZVT"/>
+                                    <navigationItem id="tUy-gd-ZVT"/>
                                 </items>
                             </navigationBar>
                         </subviews>
