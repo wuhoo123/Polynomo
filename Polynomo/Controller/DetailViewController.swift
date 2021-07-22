@@ -21,6 +21,7 @@ class DetailViewController: UIViewController {
         summaryText.text = post?.summary
         longTitleText.text = post?.title
     }
+
     
     
     // var
