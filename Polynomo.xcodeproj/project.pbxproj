@@ -81,7 +81,6 @@
 				99A7C5AB26A8985A00589758 /* View */,
 				99A7C59F26A8951300589758 /* Assets.xcassets */,
 				99A7C5B726A8A01400589758 /* Constant.swift */,
-				99A7C5A126A8951300589758 /* LaunchScreen.storyboard */,
 				99A7C5A426A8951300589758 /* Info.plist */,
 			);
 			path = Polynomo;
@@ -103,6 +102,7 @@
 				99A7C5B926A8A18F00589758 /* PostViewCell.swift */,
 				99A7C5BA26A8A18F00589758 /* PostViewCell.xib */,
 				99A7C59C26A8951200589758 /* Main.storyboard */,
+				99A7C5A126A8951300589758 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
