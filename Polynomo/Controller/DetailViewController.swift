@@ -18,8 +18,15 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         shortTitleText.text = post?.shortTitle
-        summaryText.text = post?.summary
         longTitleText.text = post?.title
+        
+        if post?.summary == "" {
+            summaryText.text = "Summary is not yet available :("
+        }
+        else {
+            summaryText.text = post?.summary
+        }
+
     }
 
     

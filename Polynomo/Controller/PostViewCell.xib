@@ -22,7 +22,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-oR-BXK">
-                        <rect key="frame" x="149" y="87" width="22.5" height="47"/>
+                        <rect key="frame" x="149" y="92" width="22.5" height="42"/>
                         <color key="tintColor" systemColor="systemIndigoColor"/>
                         <state key="normal" image="bubble.left" catalog="system"/>
                         <connections>
@@ -56,7 +56,7 @@
                     <constraint firstItem="2iu-oR-BXK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NH3-UF-PsN"/>
                     <constraint firstAttribute="trailing" secondItem="M5G-TO-vv5" secondAttribute="trailing" id="PVV-Y6-fwp"/>
                     <constraint firstItem="M5G-TO-vv5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="joq-fi-QQT"/>
-                    <constraint firstItem="2iu-oR-BXK" firstAttribute="top" secondItem="OyU-MD-bnD" secondAttribute="bottom" constant="10" id="n1t-xQ-w6M"/>
+                    <constraint firstItem="2iu-oR-BXK" firstAttribute="top" secondItem="OyU-MD-bnD" secondAttribute="bottom" constant="15" id="n1t-xQ-w6M"/>
                     <constraint firstAttribute="bottom" secondItem="2iu-oR-BXK" secondAttribute="bottom" constant="10" id="uTV-ZL-pDL"/>
                     <constraint firstAttribute="trailing" secondItem="OyU-MD-bnD" secondAttribute="trailing" constant="10" id="vjI-Xg-nHP"/>
                 </constraints>
