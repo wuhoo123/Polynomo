@@ -29,7 +29,4 @@ class DetailViewController: UIViewController {
 
     }
 
-    
-    
-    // var
 }

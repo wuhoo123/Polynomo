@@ -39,7 +39,7 @@
             </objects>
             <point key="canvasLocation" x="20" y="79"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Upcoming-->
         <scene sceneID="chc-cb-4ej">
             <objects>
                 <viewController id="KUL-qj-FUO" customClass="HomeViewController" customModule="Polynomo" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,7 +64,7 @@
                         <viewLayoutGuide key="safeArea" id="FmX-GY-1BI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HEu-3O-3Ng"/>
+                    <navigationItem key="navigationItem" title="Upcoming" id="HEu-3O-3Ng"/>
                     <connections>
                         <outlet property="tableView" destination="ZRR-ed-4LX" id="Ohe-fQ-VkN"/>
                         <segue destination="uib-7y-gZq" kind="show" identifier="FeedToPost" id="HeQ-bY-bxX"/>
@@ -74,7 +74,7 @@
             </objects>
             <point key="canvasLocation" x="1815.9420289855075" y="77.678571428571431"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--U.S. Congress-->
         <scene sceneID="pJJ-Tf-VVk">
             <objects>
                 <viewController id="uib-7y-gZq" customClass="DetailViewController" customModule="Polynomo" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,7 +147,9 @@
                             <constraint firstItem="jmv-Zf-OTl" firstAttribute="top" secondItem="qPD-ut-36V" secondAttribute="top" id="qCT-oh-bFA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2Vj-o3-pTt"/>
+                    <navigationItem key="navigationItem" title="U.S. Congress" id="2Vj-o3-pTt">
+                        <barButtonItem key="backBarButtonItem" title="  " id="TZr-DP-ckX"/>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="longTitleText" destination="son-Wq-fg2" id="Pvh-78-YyG"/>
@@ -164,7 +166,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="syx-Zj-vyQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5G2-z3-uzZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.backward" catalog="system" backIndicatorTransitionMaskImage="chevron.backward" id="5G2-z3-uzZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -179,6 +181,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

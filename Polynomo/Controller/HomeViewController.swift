@@ -19,6 +19,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         lawManager.delegate = self
         
         tableView.delegate = self
@@ -26,10 +28,6 @@ class HomeViewController: UIViewController {
         
         // Register the xib file to those cells.
         tableView.register(UINib(nibName: Constant.cellNibName, bundle: nil), forCellReuseIdentifier: Constant.cellIdentifier)
-        
-//        self.tableView.rowHeight = UITableView.automaticDimension
-//        self.tableView.estimatedRowHeight = 200 // replace 50 with whatever height you require
-//        self.tableView.reloadData()
         
         lawManager.fetchUpcoming(1)
         loadPosts()
@@ -39,7 +37,7 @@ class HomeViewController: UIViewController {
     // Function that hides the navigation bar.
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = false  // Shows the navigation bar
+//        navigationController?.isNavigationBarHidden = false  // Shows the navigation bar
     }
     
     func loadPosts() {
