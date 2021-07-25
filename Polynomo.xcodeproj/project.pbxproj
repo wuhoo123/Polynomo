@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1FA387F7DFFC852E0C134A /* Pods_Polynomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EE708058AFFBD77BB201EC /* Pods_Polynomo.framework */; };
 		99A7C59726A8951200589758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59626A8951200589758 /* AppDelegate.swift */; };
 		99A7C59926A8951200589758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59826A8951200589758 /* SceneDelegate.swift */; };
 		99A7C59B26A8951200589758 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59A26A8951200589758 /* EnterViewController.swift */; };
@@ -22,9 +23,12 @@
 		99A7C5BB26A8A18F00589758 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B926A8A18F00589758 /* PostViewCell.swift */; };
 		99A7C5BC26A8A18F00589758 /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C5BA26A8A18F00589758 /* PostViewCell.xib */; };
 		99A7C5BE26A9CF1200589758 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5BD26A9CF1200589758 /* DetailViewController.swift */; };
+		99A7C5C026AD2A9900589758 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C5BF26AD2A9900589758 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26F23D4A06093197AFA42AFD /* Pods-Polynomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polynomo.release.xcconfig"; path = "Target Support Files/Pods-Polynomo/Pods-Polynomo.release.xcconfig"; sourceTree = "<group>"; };
+		5E252AC3CBA4451998C49DEF /* Pods-Polynomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polynomo.debug.xcconfig"; path = "Target Support Files/Pods-Polynomo/Pods-Polynomo.debug.xcconfig"; sourceTree = "<group>"; };
 		99A7C59326A8951200589758 /* Polynomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polynomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A7C59626A8951200589758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A7C59826A8951200589758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		99A7C5B926A8A18F00589758 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostViewCell.swift; path = Polynomo/Controller/PostViewCell.swift; sourceTree = SOURCE_ROOT; };
 		99A7C5BA26A8A18F00589758 /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PostViewCell.xib; path = Polynomo/Controller/PostViewCell.xib; sourceTree = SOURCE_ROOT; };
 		99A7C5BD26A9CF1200589758 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		99A7C5BF26AD2A9900589758 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1EE708058AFFBD77BB201EC /* Pods_Polynomo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Polynomo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +55,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1FA387F7DFFC852E0C134A /* Pods_Polynomo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EAE3E0450EB142DFE49AA3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E252AC3CBA4451998C49DEF /* Pods-Polynomo.debug.xcconfig */,
+				26F23D4A06093197AFA42AFD /* Pods-Polynomo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		99A7C58A26A8951200589758 = {
 			isa = PBXGroup;
 			children = (
 				99A7C59526A8951200589758 /* Polynomo */,
 				99A7C59426A8951200589758 /* Products */,
+				3EAE3E0450EB142DFE49AA3D /* Pods */,
+				A55D21E8E212E8E3AF4BAC27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +101,7 @@
 				99A7C59F26A8951300589758 /* Assets.xcassets */,
 				99A7C5B726A8A01400589758 /* Constant.swift */,
 				99A7C5A426A8951300589758 /* Info.plist */,
+				99A7C5BF26AD2A9900589758 /* GoogleService-Info.plist */,
 			);
 			path = Polynomo;
 			sourceTree = "<group>";
@@ -118,6 +138,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A55D21E8E212E8E3AF4BAC27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1EE708058AFFBD77BB201EC /* Pods_Polynomo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99A7C5A726A8951300589758 /* Build configuration list for PBXNativeTarget "Polynomo" */;
 			buildPhases = (
+				877C647DA3B20AF2B0BA1777 /* [CP] Check Pods Manifest.lock */,
 				99A7C58F26A8951200589758 /* Sources */,
 				99A7C59026A8951200589758 /* Frameworks */,
 				99A7C59126A8951200589758 /* Resources */,
+				0A875470D1970CC32A5B128A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,12 +207,55 @@
 			files = (
 				99A7C5A326A8951300589758 /* LaunchScreen.storyboard in Resources */,
 				99A7C5A026A8951300589758 /* Assets.xcassets in Resources */,
+				99A7C5C026AD2A9900589758 /* GoogleService-Info.plist in Resources */,
 				99A7C5BC26A8A18F00589758 /* PostViewCell.xib in Resources */,
 				99A7C59E26A8951200589758 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A875470D1970CC32A5B128A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Polynomo/Pods-Polynomo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Polynomo/Pods-Polynomo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Polynomo/Pods-Polynomo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		877C647DA3B20AF2B0BA1777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Polynomo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99A7C58F26A8951200589758 /* Sources */ = {
@@ -343,6 +416,7 @@
 		};
 		99A7C5A826A8951300589758 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E252AC3CBA4451998C49DEF /* Pods-Polynomo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +435,7 @@
 		};
 		99A7C5A926A8951300589758 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F23D4A06093197AFA42AFD /* Pods-Polynomo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
