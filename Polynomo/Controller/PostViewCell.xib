@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepeatingCell" rowHeight="536" id="KGk-i7-Jjw" customClass="PostViewCell" customModule="Polynomo" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepeatingCell" id="KGk-i7-Jjw" customClass="PostViewCell" customModule="Polynomo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="5" width="320" height="122"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-gH-5Ph">
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-gH-5Ph" userLabel="Button Stack">
                         <rect key="frame" x="64.5" y="92" width="191.5" height="25"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-oR-BXK">
@@ -39,7 +39,7 @@
                             </button>
                         </subviews>
                     </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OyU-MD-bnD">
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OyU-MD-bnD" userLabel="Text Stack">
                         <rect key="frame" x="10" y="15" width="300" height="62"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVJ-cv-Iuc">
@@ -66,9 +66,9 @@
                     <constraint firstAttribute="bottom" secondItem="M5G-TO-vv5" secondAttribute="bottom" constant="5" id="Mel-99-kgi"/>
                     <constraint firstItem="OyU-MD-bnD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NEj-cD-GpF"/>
                     <constraint firstAttribute="trailing" secondItem="M5G-TO-vv5" secondAttribute="trailing" id="PVV-Y6-fwp"/>
+                    <constraint firstAttribute="trailing" secondItem="OyU-MD-bnD" secondAttribute="trailing" constant="10" id="gGi-0J-WnU"/>
                     <constraint firstAttribute="bottom" secondItem="ohx-gH-5Ph" secondAttribute="bottom" constant="15" id="jWl-Hq-czx"/>
                     <constraint firstItem="M5G-TO-vv5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="joq-fi-QQT"/>
-                    <constraint firstAttribute="trailing" secondItem="OyU-MD-bnD" secondAttribute="trailing" constant="10" id="vjI-Xg-nHP"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

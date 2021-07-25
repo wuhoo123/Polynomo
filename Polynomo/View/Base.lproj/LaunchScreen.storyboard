@@ -34,9 +34,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="archivebox" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rUh-hc-JYh">
-                                <rect key="frame" x="156.91747936474815" y="397.80941848478051" width="100.0000000000001" height="99.999999999999829"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="archivebox" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rUh-hc-JYh">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="light"/>
                             </imageView>
@@ -48,8 +47,10 @@
                             <constraint firstItem="HzC-qI-jOx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LAh-uZ-9VW"/>
                             <constraint firstItem="Q7L-FE-S2X" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O1c-Pu-F4Z"/>
                             <constraint firstItem="GEi-nW-BXj" firstAttribute="top" secondItem="Q7L-FE-S2X" secondAttribute="bottom" constant="15" id="UfZ-MS-pHH"/>
+                            <constraint firstItem="rUh-hc-JYh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="naP-Am-zeh"/>
+                            <constraint firstItem="rUh-hc-JYh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nia-Rg-wNn"/>
                             <constraint firstItem="Q7L-FE-S2X" firstAttribute="top" secondItem="HzC-qI-jOx" secondAttribute="bottom" constant="5" id="opu-uK-skA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GEi-nW-BXj" secondAttribute="bottom" id="ygA-pp-Mas"/>
+                            <constraint firstAttribute="bottom" secondItem="GEi-nW-BXj" secondAttribute="bottom" constant="34" id="ygA-pp-Mas"/>
                         </constraints>
                     </view>
                 </viewController>
