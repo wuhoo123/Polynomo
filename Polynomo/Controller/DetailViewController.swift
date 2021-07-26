@@ -13,6 +13,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var shortTitleText: UILabel!
     @IBOutlet weak var longTitleText: UILabel!
     @IBOutlet weak var summaryText: UILabel!
+    @IBOutlet weak var sponsorButton: UIButton!
     
     var post: PostModel?
     
@@ -26,6 +27,8 @@ class DetailViewController: UIViewController {
         else {
             summaryText.text = post?.summary
         }
+        
+        sponsorButton.setTitle(post?.billSponsor, for: .normal)
 
     }
 
