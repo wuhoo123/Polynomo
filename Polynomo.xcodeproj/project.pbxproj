@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4E1FA387F7DFFC852E0C134A /* Pods_Polynomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EE708058AFFBD77BB201EC /* Pods_Polynomo.framework */; };
+		99A357BB26AF24B800E48C16 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A357BA26AF24B800E48C16 /* LoginController.swift */; };
+		99A357BD26AF24D400E48C16 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A357BC26AF24D400E48C16 /* SignupController.swift */; };
 		99A7C59726A8951200589758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59626A8951200589758 /* AppDelegate.swift */; };
 		99A7C59926A8951200589758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59826A8951200589758 /* SceneDelegate.swift */; };
 		99A7C59B26A8951200589758 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C59A26A8951200589758 /* EnterViewController.swift */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		26F23D4A06093197AFA42AFD /* Pods-Polynomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polynomo.release.xcconfig"; path = "Target Support Files/Pods-Polynomo/Pods-Polynomo.release.xcconfig"; sourceTree = "<group>"; };
 		5E252AC3CBA4451998C49DEF /* Pods-Polynomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polynomo.debug.xcconfig"; path = "Target Support Files/Pods-Polynomo/Pods-Polynomo.debug.xcconfig"; sourceTree = "<group>"; };
+		99A357BA26AF24B800E48C16 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		99A357BC26AF24D400E48C16 /* SignupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		99A7C59326A8951200589758 /* Polynomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polynomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A7C59626A8951200589758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99A7C59826A8951200589758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +72,6 @@
 				5E252AC3CBA4451998C49DEF /* Pods-Polynomo.debug.xcconfig */,
 				26F23D4A06093197AFA42AFD /* Pods-Polynomo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,6 +115,8 @@
 				99A7C59A26A8951200589758 /* EnterViewController.swift */,
 				99A7C5AC26A89B3A00589758 /* HomeViewController.swift */,
 				99A7C5BD26A9CF1200589758 /* DetailViewController.swift */,
+				99A357BA26AF24B800E48C16 /* LoginController.swift */,
+				99A357BC26AF24D400E48C16 /* SignupController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,9 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				99A7C5BE26A9CF1200589758 /* DetailViewController.swift in Sources */,
+				99A357BB26AF24B800E48C16 /* LoginController.swift in Sources */,
 				99A7C5B626A89FD300589758 /* GetSpecificBillData.swift in Sources */,
 				99A7C5B426A89FBC00589758 /* UpcomingData.swift in Sources */,
 				99A7C5B826A8A01400589758 /* Constant.swift in Sources */,
+				99A357BD26AF24D400E48C16 /* SignupController.swift in Sources */,
 				99A7C59B26A8951200589758 /* EnterViewController.swift in Sources */,
 				99A7C5BB26A8A18F00589758 /* PostViewCell.swift in Sources */,
 				99A7C5B226A89F9C00589758 /* PostModel.swift in Sources */,
