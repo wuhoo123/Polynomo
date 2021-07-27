@@ -5,8 +5,12 @@
 //  Created by William Wu on 7/21/21.
 //
 
+// The LawManager.swift is responsible for parsing the JSON data from the ProPublica API with both GET requests for upcoming laws and bills and the specific bill data.
+
+
 import Foundation
 
+// This delegate
 protocol LawManagerDelegate {
     func didUpdateStatus(_ lawManager: LawManager, upcoming: [PostModel])
     func didFailWithError(_ error: Error)
@@ -22,11 +26,10 @@ struct LawManager {
     
     // Creating the delgate member
     var delegate: LawManagerDelegate?
+
     
     
-    
-    
-    // Calls API and sets the authorization header.
+    // Calls API and sets the authorization header for upcoming data.
     func fetchUpcoming(_ id: Int) {
         var urlUpcomingFinalString: String?
         
@@ -44,6 +47,7 @@ struct LawManager {
         performRequest(request, 0)
     }
 
+    // Calls API and sets the authorization header for specific data.
     func getSpecificBill(_ bill_slug: [String]) {
         let length = bill_slug.count
         for i in 0...length-1 {
@@ -83,7 +87,7 @@ struct LawManager {
 
     }
     
-    // Parses the JSON Data for Upcoming GET Request.
+    // Parses the JSON Data for Upcoming Bills GET Request.
     func parseJSONUpcoming(_ lawData: Data){
         var upcomingBill: [String] = []
         let decoder = JSONDecoder()
@@ -106,7 +110,7 @@ struct LawManager {
         }
     }
     
-    // Parses the JSON Data for Specific GET Request.
+    // Parses the JSON Data for Specific Bill GET Request.
     func parseJSONSpecific(_ lawData: Data) -> [PostModel]?{
         
         var post: [PostModel] = []

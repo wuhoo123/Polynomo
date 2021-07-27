@@ -5,6 +5,8 @@
 //  Created by William Wu on 7/21/21.
 //
 
+// PostModel.swift sets the standard for what is displayed on each individual bill.
+
 import Foundation
 
 

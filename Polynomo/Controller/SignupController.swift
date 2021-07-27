@@ -10,13 +10,11 @@ import UIKit
 
 
 class SignupController: UIViewController {
-    //
     
     override func viewDidLoad() {
 
     }
     @IBAction func loginToSignupPressed(_ sender: Any) {
-        
         performSegue(withIdentifier: "SignupToLogin", sender: self)
     }
     

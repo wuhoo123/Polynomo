@@ -5,8 +5,9 @@
 //  Created by William Wu on 7/21/21.
 //
 
-import Foundation
+// The JSON format for Upcoming 
 
+import Foundation
 
 struct UpcomingData: Codable {
     let copyright: String
