@@ -11,8 +11,14 @@ import UIKit
 
 class LoginController: UIViewController {
     
+    @IBOutlet weak var emailLogin: UITextField!
+    @IBOutlet weak var passwordLogin: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
-
+        emailLogin.layer.cornerRadius = 5
+        passwordLogin.layer.cornerRadius = 5
+        loginButton.layer.cornerRadius = 5
     }
     
     @IBAction func signupPressed(_ sender: Any) {
