@@ -19,17 +19,22 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         shortTitleText.text = post?.shortTitle
-        longTitleText.text = post?.title
         
         if post?.summary == "" {
             summaryText.text = "Summary is not yet available :("
+            longTitleText.text = post?.title
         }
         else {
             summaryText.text = post?.summary
+            longTitleText.text = ""
+
         }
         
         sponsorButton.setTitle(post?.billSponsor, for: .normal)
 
     }
 
+    @IBAction func sponsorButtonPressed(_ sender: Any) {
+        print("button pressed")
+    }
 }
