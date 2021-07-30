@@ -22,7 +22,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-gH-5Ph" userLabel="Button Stack">
-                        <rect key="frame" x="64.5" y="92" width="191.5" height="25"/>
+                        <rect key="frame" x="64" y="92" width="192" height="25"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-oR-BXK">
                                 <rect key="frame" x="0.0" y="0.0" width="22.5" height="25"/>
@@ -33,14 +33,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0U-3k-dQ1">
-                                <rect key="frame" x="172.5" y="0.0" width="19" height="25"/>
+                                <rect key="frame" x="172.5" y="0.0" width="19.5" height="25"/>
                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                 <state key="normal" image="square.and.arrow.up" catalog="system"/>
                             </button>
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OyU-MD-bnD" userLabel="Text Stack">
-                        <rect key="frame" x="10" y="15" width="300" height="62"/>
+                        <rect key="frame" x="16" y="15" width="288" height="62"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVJ-cv-Iuc">
                                 <rect key="frame" x="0.0" y="0.0" width="76.5" height="26.5"/>
@@ -59,14 +59,15 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                 <constraints>
-                    <constraint firstItem="ohx-gH-5Ph" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4Rg-Vm-8cJ"/>
+                    <constraint firstItem="ohx-gH-5Ph" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="48" id="940-b8-9e1"/>
                     <constraint firstItem="M5G-TO-vv5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9Fs-rJ-0wP"/>
                     <constraint firstItem="OyU-MD-bnD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="BTQ-2Z-lcj"/>
                     <constraint firstItem="ohx-gH-5Ph" firstAttribute="top" secondItem="OyU-MD-bnD" secondAttribute="bottom" constant="15" id="Dhr-6B-Gb1"/>
                     <constraint firstAttribute="bottom" secondItem="M5G-TO-vv5" secondAttribute="bottom" constant="5" id="Mel-99-kgi"/>
-                    <constraint firstItem="OyU-MD-bnD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NEj-cD-GpF"/>
+                    <constraint firstItem="OyU-MD-bnD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NEj-cD-GpF"/>
                     <constraint firstAttribute="trailing" secondItem="M5G-TO-vv5" secondAttribute="trailing" id="PVV-Y6-fwp"/>
-                    <constraint firstAttribute="trailing" secondItem="OyU-MD-bnD" secondAttribute="trailing" constant="10" id="gGi-0J-WnU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ohx-gH-5Ph" secondAttribute="trailing" constant="48" id="SEZ-Xk-1c1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OyU-MD-bnD" secondAttribute="trailing" id="gGi-0J-WnU"/>
                     <constraint firstAttribute="bottom" secondItem="ohx-gH-5Ph" secondAttribute="bottom" constant="15" id="jWl-Hq-czx"/>
                     <constraint firstItem="M5G-TO-vv5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="joq-fi-QQT"/>
                 </constraints>
