@@ -274,7 +274,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
-                                            <action selector="signupPressed:" destination="pE5-6b-T2c" eventType="touchUpInside" id="nLe-mP-YiO"/>
+                                            <action selector="signupToLoginPressed:" destination="pE5-6b-T2c" eventType="touchUpInside" id="nLe-mP-YiO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -293,6 +293,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="🔐 LOG IN"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="pE5-6b-T2c" eventType="touchUpInside" id="8IJ-kY-WCU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXn-wq-d4I">
                                 <rect key="frame" x="139.5" y="171" width="135" height="24"/>
@@ -384,6 +387,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="SIGN UP"/>
+                                <connections>
+                                    <action selector="signupPressed:" destination="0HR-Vp-lTj" eventType="touchUpInside" id="3zn-FG-Tsb"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cn9-lN-z2a">
                                 <rect key="frame" x="82.5" y="809" width="249" height="33"/>
@@ -435,7 +441,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QnX-Sq-jGk"/>
+        <segue reference="bhj-HH-Q8g"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>

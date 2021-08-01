@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import Firebase
 
 class LoginController: UIViewController {
     
@@ -21,7 +21,24 @@ class LoginController: UIViewController {
         loginButton.layer.cornerRadius = 5
     }
     
-    @IBAction func signupPressed(_ sender: Any) {
+    @IBAction func loginPressed(_ sender: Any) {
+        if let email = emailLogin.text, let password = passwordLogin.text {
+            Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                } else {
+                    self!.performSegue(withIdentifier: "LoginToEnter", sender: self)
+                }
+              
+            }
+            
+        }
+        
+        
+    }
+    
+    
+    @IBAction func signupToLoginPressed(_ sender: Any) {
         performSegue(withIdentifier: "LoginToSignup", sender: self)
     }
     

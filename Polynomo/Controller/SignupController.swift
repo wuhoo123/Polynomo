@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import Firebase
 
 class SignupController: UIViewController {
     
@@ -22,6 +22,23 @@ class SignupController: UIViewController {
         passwordSignup.layer.cornerRadius = 5
         signupButton.layer.cornerRadius = 5
     }
+    
+
+    
+    @IBAction func signupPressed(_ sender: Any) {
+        if let email = emailSignup.text, let password = passwordSignup.text, let username = usernameSignup.text {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                } else {
+                    // Navigate to ChatViewController
+                    self.performSegue(withIdentifier: "SignupToEnter", sender: self)
+                }
+            }
+        }
+        
+    }
+    
     @IBAction func loginToSignupPressed(_ sender: Any) {
         performSegue(withIdentifier: "SignupToLogin", sender: self)
     }
