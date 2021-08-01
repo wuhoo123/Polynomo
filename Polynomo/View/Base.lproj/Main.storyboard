@@ -64,10 +64,17 @@
                         <viewLayoutGuide key="safeArea" id="FmX-GY-1BI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Upcoming" id="HEu-3O-3Ng"/>
+                    <navigationItem key="navigationItem" title="Upcoming" id="HEu-3O-3Ng">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="iUc-l4-ZRc">
+                            <connections>
+                                <action selector="logoutPressed:" destination="KUL-qj-FUO" id="DCL-iN-DTr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ZRR-ed-4LX" id="Ohe-fQ-VkN"/>
                         <segue destination="uib-7y-gZq" kind="show" identifier="FeedToPost" id="HeQ-bY-bxX"/>
+                        <segue destination="pE5-6b-T2c" kind="presentation" identifier="Logout" modalPresentationStyle="fullScreen" id="obY-0p-cKa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9W-HV-oFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -241,13 +248,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6k9-U1-POa" userLabel="Email View">
                                 <rect key="frame" x="47" y="218" width="320" height="120"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" ✉️ Email" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="NqS-1b-Ka8">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="test@test.com" placeholder=" ✉️ Email" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="NqS-1b-Ka8">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" 🔑 Password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="IK6-40-QYv">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tester" placeholder=" 🔑 Password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="IK6-40-QYv">
                                         <rect key="frame" x="0.0" y="70" width="320" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -441,7 +448,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QnX-Sq-jGk"/>
+        <segue reference="obY-0p-cKa"/>
+        <segue reference="bhj-HH-Q8g"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>

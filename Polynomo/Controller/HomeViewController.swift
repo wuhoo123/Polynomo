@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
     
@@ -44,6 +45,20 @@ class HomeViewController: UIViewController {
         tableView.reloadData()
     }
     
+    
+    @IBAction func logoutPressed(_ sender: Any) {
+        print("logout pressed")
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            print("success")
+            self.performSegue(withIdentifier: "Logout", sender: self)
+            
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+        
+    }
     
     
 }
