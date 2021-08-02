@@ -80,6 +80,9 @@ extension HomeViewController: LawManagerDelegate {
 }
 
 //MARK: - UITableViewDataSource
+
+// This function runs to many times at once to update the data. It loads the table n times if there are n elements instead of just once. Needs to be fixed.
+
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,9 +94,10 @@ extension HomeViewController: UITableViewDataSource {
         let postData = post[indexPath.row]
         print(postData)
         
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: Constant.cellIdentifier, for: indexPath) as! PostViewCell
+        
         cell.shortTitleText.text = postData.shortTitle
+        cell.sponsorButton.setTitle("👤 \(postData.billSponsor)", for: .normal)
         
         if postData.summary == "" {
             cell.shortSummaryText.text = "Summary is not available yet."

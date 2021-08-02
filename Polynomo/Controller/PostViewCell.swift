@@ -13,6 +13,7 @@ class PostViewCell: UITableViewCell {
     @IBOutlet weak var postBackground: UIView!
     @IBOutlet weak var shortTitleText: UILabel!
     @IBOutlet weak var shortSummaryText: UILabel!
+    @IBOutlet weak var sponsorButton: UIButton!
     
     
     override func awakeFromNib() {

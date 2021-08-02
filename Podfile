@@ -8,6 +8,7 @@ target 'Polynomo' do
   # Pods for Polynomo
   # add the Firebase pod for Google Analytics
   pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
 
   # add pods for any other desired Firebase products

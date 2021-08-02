@@ -16,6 +16,8 @@ class SignupController: UIViewController {
     @IBOutlet weak var passwordSignup: UITextField!
     @IBOutlet weak var signupButton: UIButton!
     
+    let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         emailSignup.layer.cornerRadius = 5
         usernameSignup.layer.cornerRadius = 5
@@ -32,6 +34,18 @@ class SignupController: UIViewController {
                     print(e.localizedDescription)
                 } else {
                     // Navigate to ChatViewController
+                    self.db.collection("User").addDocument(data: [
+                        "email": email,
+                        "password": password,
+                        "username": username
+                    ]) { (error) in
+                        if let e = error {
+                            print("There was an issue saving data to firestore, \(e)")
+                        } else {
+                            print("Successfully saved")
+                        }
+                    }
+                    
                     self.performSegue(withIdentifier: "SignupToEnter", sender: self)
                 }
             }
