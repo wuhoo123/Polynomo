@@ -100,7 +100,7 @@ extension HomeViewController: UITableViewDataSource {
         cell.sponsorButton.setTitle("👤 \(postData.billSponsor)", for: .normal)
         
         if postData.summary == "" {
-            cell.shortSummaryText.text = "Summary is not available yet."
+            cell.shortSummaryText.text = "Summary is not available yet. Here is long title: \(postData.title)"
         }
         else {
             cell.shortSummaryText.text = postData.summary

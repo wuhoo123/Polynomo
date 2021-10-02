@@ -20,6 +20,7 @@ class PostViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        // Adds rounded corners.
         postBackground.layer.cornerRadius = 5
 
     }
@@ -32,6 +33,5 @@ class PostViewCell: UITableViewCell {
     
     @IBAction func commentButtonPressed(_ sender: Any) {
         // performSegue(withIdentifier: "FeedToPost", sender: HomeViewController)
-
     }
 }

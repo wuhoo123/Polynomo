@@ -30,11 +30,11 @@ class DetailViewController: UIViewController {
 
         }
         
-        sponsorButton.setTitle(post?.billSponsor, for: .normal)
+        sponsorButton.setTitle("👤 \(post!.billSponsor)", for: .normal)
 
     }
 
     @IBAction func sponsorButtonPressed(_ sender: Any) {
-        print("button pressed")
+        print("\(post!.billSponsor) pressed")
     }
 }

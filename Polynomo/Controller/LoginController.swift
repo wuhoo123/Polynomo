@@ -16,6 +16,7 @@ class LoginController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
+        // Adds rounded corners to buttons.
         emailLogin.layer.cornerRadius = 5
         passwordLogin.layer.cornerRadius = 5
         loginButton.layer.cornerRadius = 5

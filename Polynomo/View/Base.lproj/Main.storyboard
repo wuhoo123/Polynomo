@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pE5-6b-T2c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pE5-6b-T2c">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -47,22 +48,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZRR-ed-4LX">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZRR-ed-4LX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="systemGray6Color"/>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9cM-No-KOa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="tUy-gd-ZVT"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FmX-GY-1BI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRR-ed-4LX" firstAttribute="top" secondItem="FmX-GY-1BI" secondAttribute="top" id="AW8-7u-dkZ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZRR-ed-4LX" secondAttribute="bottom" id="TxY-1s-SpA"/>
+                            <constraint firstItem="ZRR-ed-4LX" firstAttribute="leading" secondItem="FmX-GY-1BI" secondAttribute="leading" id="Ulh-UH-jVy"/>
+                            <constraint firstItem="ZRR-ed-4LX" firstAttribute="trailing" secondItem="FmX-GY-1BI" secondAttribute="trailing" id="cav-D9-01w"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Upcoming" id="HEu-3O-3Ng">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="iUc-l4-ZRc">
@@ -133,7 +132,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-7d-E4e">
-                                                <rect key="frame" x="20" y="117" width="99" height="47.5"/>
+                                                <rect key="frame" x="20" y="117" width="374" height="47.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g8-bO-bWZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="25" height="24"/>
@@ -161,6 +160,7 @@
                                         <constraints>
                                             <constraint firstItem="son-Wq-fg2" firstAttribute="centerX" secondItem="bjC-vl-BSl" secondAttribute="centerX" id="2Gf-un-xZF"/>
                                             <constraint firstItem="Sso-gx-gB5" firstAttribute="top" secondItem="bjC-vl-BSl" secondAttribute="top" constant="20" id="4aL-4L-nQ0"/>
+                                            <constraint firstAttribute="trailing" secondItem="GK4-7d-E4e" secondAttribute="trailing" constant="20" id="6yn-p9-vFk"/>
                                             <constraint firstItem="GK4-7d-E4e" firstAttribute="top" secondItem="son-Wq-fg2" secondAttribute="bottom" constant="10" id="8aY-KT-SMz"/>
                                             <constraint firstItem="QpS-yq-lYj" firstAttribute="leading" secondItem="bjC-vl-BSl" secondAttribute="leading" constant="20" id="BH3-Wx-Cnf"/>
                                             <constraint firstItem="w4Q-fL-u8w" firstAttribute="top" secondItem="GK4-7d-E4e" secondAttribute="bottom" constant="10" id="Eb2-U7-fch"/>
@@ -225,7 +225,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.backward" catalog="system" backIndicatorTransitionMaskImage="chevron.backward" id="5G2-z3-uzZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -461,9 +460,6 @@
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
