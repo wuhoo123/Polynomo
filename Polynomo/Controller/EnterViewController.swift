@@ -28,7 +28,7 @@ class EnterViewController: UIViewController {
         var characterIndex = 0.0
         let labelText = "Polynomo"
         for letter in labelText {
-            Timer.scheduledTimer(withTimeInterval: 0.2 * characterIndex, repeats: false) { (timer) in
+            Timer.scheduledTimer(withTimeInterval: 0.25 * characterIndex, repeats: false) { (timer) in
                 label.text?.append(letter)
             }
             characterIndex += 1

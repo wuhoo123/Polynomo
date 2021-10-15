@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,11 +49,21 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-gH-5Ph" userLabel="Button Stack">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-gH-5Ph" userLabel="Button Stack">
                                 <rect key="frame" x="20" y="131.5" width="284" height="44.5"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhT-3T-3sd">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="44.5"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="heart" catalog="system" symbolScale="medium"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nd1-Yr-SO1"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-oR-BXK">
-                                        <rect key="frame" x="0.0" y="0.0" width="72" height="44.5"/>
+                                        <rect key="frame" x="146" y="0.0" width="138" height="44.5"/>
                                         <color key="tintColor" systemColor="systemIndigoColor"/>
                                         <state key="normal">
                                             <imageReference key="image" image="bubble.left" catalog="system" symbolScale="medium"/>
@@ -60,13 +71,6 @@
                                         <connections>
                                             <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XWl-ij-1Um"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0U-3k-dQ1">
-                                        <rect key="frame" x="212" y="0.0" width="72" height="44.5"/>
-                                        <color key="tintColor" systemColor="systemIndigoColor"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="medium"/>
-                                        </state>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -105,7 +109,7 @@
     </objects>
     <resources>
         <image name="bubble.left" catalog="system" width="128" height="110"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
