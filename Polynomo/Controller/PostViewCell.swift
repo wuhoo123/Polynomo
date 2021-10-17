@@ -11,9 +11,13 @@ import UIKit
 class PostViewCell: UITableViewCell {
 
     @IBOutlet weak var postBackground: UIView!
+    @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var shortTitleText: UILabel!
     @IBOutlet weak var shortSummaryText: UILabel!
     @IBOutlet weak var sponsorButton: UIButton!
+    @IBOutlet weak var dislikeButton: UIButton!
+    
+    let heartFilled = UIImage(systemName: "heart.fill")
     
     
     override func awakeFromNib() {
@@ -32,6 +36,20 @@ class PostViewCell: UITableViewCell {
     }
     
     @IBAction func commentButtonPressed(_ sender: Any) {
-        // performSegue(withIdentifier: "FeedToPost", sender: HomeViewController)
+        
     }
+
+    
+    @IBAction func likeButtonPressed(_ sender: Any) {
+        likeButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.normal)
+        dislikeButton.setImage(UIImage(systemName: "heart.slash"), for: .normal)
+        
+    }
+    
+    @IBAction func dislikeButtonPressed(_ sender: Any) {
+        likeButton.setImage(UIImage(systemName: "heart"), for: UIControl.State.normal)
+        dislikeButton.setImage(UIImage(systemName: "heart.slash.fill"), for: .normal)
+        
+    }
+    
 }
