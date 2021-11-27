@@ -5,7 +5,7 @@
 //  Created by William Wu on 7/21/21.
 //
 
-// The JSON format for Upcoming 
+// The JSON format for Upcoming Data
 
 import Foundation
 

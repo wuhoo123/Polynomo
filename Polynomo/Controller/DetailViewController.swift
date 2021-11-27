@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
         shortTitleText.text = post?.shortTitle
         
         if post?.summary == "" {
-            summaryText.text = "Summary is not yet available :("
+//            summaryText.text = "Summary is not yet available :("
             longTitleText.text = post?.title
         }
         else {
