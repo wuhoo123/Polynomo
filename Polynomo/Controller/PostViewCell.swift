@@ -16,9 +16,7 @@ class PostViewCell: UITableViewCell {
     @IBOutlet weak var shortSummaryText: UILabel!
     @IBOutlet weak var sponsorButton: UIButton!
     @IBOutlet weak var dislikeButton: UIButton!
-    
-    let heartFilled = UIImage(systemName: "heart.fill")
-    
+        
     
     override func awakeFromNib() {
         super.awakeFromNib()

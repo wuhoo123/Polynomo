@@ -13,7 +13,8 @@ struct Constant {
     
     static let APIKEY = "Zcj8pKTOxuFf8i44KbBIfU8o6cmFmLQ7nEXOb3EA"
     
-    struct UI {
+    struct Segue {
+        static let detailToPost = "DetailToProfile"
 
     }
 }

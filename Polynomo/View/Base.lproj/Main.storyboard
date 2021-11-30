@@ -80,6 +80,16 @@
             </objects>
             <point key="canvasLocation" x="1815.9420289855075" y="77.678571428571431"/>
         </scene>
+        <!--ProfileVC-->
+        <scene sceneID="uJn-xI-tx1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileVC" id="vDA-0t-flO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="I16-C4-ZE3"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVi-30-izo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3631" y="-48"/>
+        </scene>
         <!-- -->
         <scene sceneID="pJJ-Tf-VVk">
             <objects>
@@ -92,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjC-vl-BSl" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="246.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="219.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sso-gx-gB5">
                                                 <rect key="frame" x="20" y="20" width="374" height="24"/>
@@ -120,28 +130,22 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4Q-fL-u8w">
-                                                <rect key="frame" x="20" y="174.5" width="51" height="21.5"/>
+                                                <rect key="frame" x="20" y="147.5" width="51" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This data comes from Congress.gov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V0-v5-mR8" userLabel="About Text">
-                                                <rect key="frame" x="20" y="206" width="374" height="20.5"/>
+                                                <rect key="frame" x="20" y="179" width="374" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="GK4-7d-E4e">
-                                                <rect key="frame" x="20" y="117" width="374" height="47.5"/>
+                                                <rect key="frame" x="20" y="117" width="374" height="20.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5g8-bO-bWZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="25" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Summary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSu-79-Xiu" userLabel="Summary">
-                                                        <rect key="frame" x="0.0" y="27" width="99" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -211,6 +215,7 @@
                         <outlet property="shortTitleText" destination="Sso-gx-gB5" id="gzD-vd-vQG"/>
                         <outlet property="sponsorButton" destination="QpS-yq-lYj" id="ipb-8L-NPe"/>
                         <outlet property="summaryText" destination="jSu-79-Xiu" id="MXj-TT-7bQ"/>
+                        <segue destination="vDA-0t-flO" kind="show" identifier="DetailToProfile" id="Tgi-g0-gla"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZL-8M-4vq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -375,7 +380,7 @@
                                     <constraint firstAttribute="width" constant="320" id="kKX-AP-obn"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉 Welcome to Polynomo! 🎉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ol-3k-nDU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎉 Welcome to Polynomo! 🎉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ol-3k-nDU">
                                 <rect key="frame" x="27" y="94" width="360" height="95.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="360" id="Rhx-Re-If6"/>

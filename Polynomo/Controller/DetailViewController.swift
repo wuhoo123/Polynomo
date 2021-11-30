@@ -36,5 +36,6 @@ class DetailViewController: UIViewController {
 
     @IBAction func sponsorButtonPressed(_ sender: Any) {
         print("\(post!.billSponsor) pressed")
+        performSegue(withIdentifier: Constant.Segue.detailToPost, sender: self)
     }
 }
