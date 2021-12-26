@@ -119,7 +119,7 @@ struct LawManager {
                 
         do {
                 
-            let decodedDataGetSpecific = try decoder.decode(GetSpecificBillData.self, from: lawData)
+            let decodedDataGetSpecific = try decoder.decode(UpcomingJSONFormat.self, from: lawData)
             let short_title = decodedDataGetSpecific.results[0].short_title
             let title = decodedDataGetSpecific.results[0].title
             let summary = decodedDataGetSpecific.results[0].summary

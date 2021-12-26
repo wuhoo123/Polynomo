@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E1FA387F7DFFC852E0C134A /* Pods_Polynomo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EE708058AFFBD77BB201EC /* Pods_Polynomo.framework */; };
+		9906736C2778D15A000C16F4 /* MemberJSONFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9906736B2778D15A000C16F4 /* MemberJSONFormat.swift */; };
 		997DB4F727529A3200ADE6FC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997DB4F627529A3200ADE6FC /* Profile.storyboard */; };
 		998B9DE727659F1100F6ABD1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B9DE627659F1100F6ABD1 /* FeedViewController.swift */; };
 		99A035D0276572E500119338 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A035CF276572E500119338 /* Detail.storyboard */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		26F23D4A06093197AFA42AFD /* Pods-Polynomo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polynomo.release.xcconfig"; path = "Target Support Files/Pods-Polynomo/Pods-Polynomo.release.xcconfig"; sourceTree = "<group>"; };
 		5E252AC3CBA4451998C49DEF /* Pods-Polynomo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polynomo.debug.xcconfig"; path = "Target Support Files/Pods-Polynomo/Pods-Polynomo.debug.xcconfig"; sourceTree = "<group>"; };
+		9906736B2778D15A000C16F4 /* MemberJSONFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberJSONFormat.swift; sourceTree = "<group>"; };
 		997DB4F627529A3200ADE6FC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		998B9DE627659F1100F6ABD1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		99A035CF276572E500119338 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				99A7C5B126A89F9C00589758 /* PostModel.swift */,
 				99A7C5B326A89FBC00589758 /* UpcomingData.swift */,
 				99A7C5B526A89FD300589758 /* GetSpecificBillData.swift */,
+				9906736B2778D15A000C16F4 /* MemberJSONFormat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				99A357BB26AF24B800E48C16 /* LoginController.swift in Sources */,
 				99A7C5B626A89FD300589758 /* GetSpecificBillData.swift in Sources */,
 				99A7C5B426A89FBC00589758 /* UpcomingData.swift in Sources */,
+				9906736C2778D15A000C16F4 /* MemberJSONFormat.swift in Sources */,
 				99A7C5B826A8A01400589758 /* Constant.swift in Sources */,
 				99A357BD26AF24D400E48C16 /* SignupController.swift in Sources */,
 				998B9DE727659F1100F6ABD1 /* FeedViewController.swift in Sources */,
