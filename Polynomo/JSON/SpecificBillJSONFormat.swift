@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UpcomingJSONFormat: Codable {
+struct SpecificBillJSONFormat: Codable {
     let status: String
     let results: [ResultsGetSpecificBillData]
     

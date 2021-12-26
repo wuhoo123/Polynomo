@@ -24,8 +24,8 @@
 		99A7C5AD26A89B3A00589758 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5AC26A89B3A00589758 /* HomeViewController.swift */; };
 		99A7C5B026A89F8900589758 /* LawManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5AF26A89F8900589758 /* LawManager.swift */; };
 		99A7C5B226A89F9C00589758 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B126A89F9C00589758 /* PostModel.swift */; };
-		99A7C5B426A89FBC00589758 /* UpcomingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B326A89FBC00589758 /* UpcomingData.swift */; };
-		99A7C5B626A89FD300589758 /* GetSpecificBillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B526A89FD300589758 /* GetSpecificBillData.swift */; };
+		99A7C5B426A89FBC00589758 /* UpcomingJSONFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B326A89FBC00589758 /* UpcomingJSONFormat.swift */; };
+		99A7C5B626A89FD300589758 /* SpecificBillJSONFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B526A89FD300589758 /* SpecificBillJSONFormat.swift */; };
 		99A7C5B826A8A01400589758 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B726A8A01400589758 /* Constant.swift */; };
 		99A7C5BB26A8A18F00589758 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A7C5B926A8A18F00589758 /* PostViewCell.swift */; };
 		99A7C5BC26A8A18F00589758 /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99A7C5BA26A8A18F00589758 /* PostViewCell.xib */; };
@@ -54,8 +54,8 @@
 		99A7C5AC26A89B3A00589758 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		99A7C5AF26A89F8900589758 /* LawManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawManager.swift; sourceTree = "<group>"; };
 		99A7C5B126A89F9C00589758 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
-		99A7C5B326A89FBC00589758 /* UpcomingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingData.swift; sourceTree = "<group>"; };
-		99A7C5B526A89FD300589758 /* GetSpecificBillData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSpecificBillData.swift; sourceTree = "<group>"; };
+		99A7C5B326A89FBC00589758 /* UpcomingJSONFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingJSONFormat.swift; sourceTree = "<group>"; };
+		99A7C5B526A89FD300589758 /* SpecificBillJSONFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificBillJSONFormat.swift; sourceTree = "<group>"; };
 		99A7C5B726A8A01400589758 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		99A7C5B926A8A18F00589758 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostViewCell.swift; path = Polynomo/Controller/PostViewCell.swift; sourceTree = SOURCE_ROOT; };
 		99A7C5BA26A8A18F00589758 /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PostViewCell.xib; path = Polynomo/Controller/PostViewCell.xib; sourceTree = SOURCE_ROOT; };
@@ -85,6 +85,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9906736D27792811000C16F4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				99A7C5B326A89FBC00589758 /* UpcomingJSONFormat.swift */,
+				99A7C5B526A89FD300589758 /* SpecificBillJSONFormat.swift */,
+				9906736B2778D15A000C16F4 /* MemberJSONFormat.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		99A7C58A26A8951200589758 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 				99A7C59626A8951200589758 /* AppDelegate.swift */,
 				99A7C59826A8951200589758 /* SceneDelegate.swift */,
 				99A7C5AE26A89F5C00589758 /* Model */,
+				9906736D27792811000C16F4 /* JSON */,
 				99A7C5AA26A8984D00589758 /* Controller */,
 				99A7C5AB26A8985A00589758 /* View */,
 				99A7C59F26A8951300589758 /* Assets.xcassets */,
@@ -151,9 +162,6 @@
 			children = (
 				99A7C5AF26A89F8900589758 /* LawManager.swift */,
 				99A7C5B126A89F9C00589758 /* PostModel.swift */,
-				99A7C5B326A89FBC00589758 /* UpcomingData.swift */,
-				99A7C5B526A89FD300589758 /* GetSpecificBillData.swift */,
-				9906736B2778D15A000C16F4 /* MemberJSONFormat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,8 +295,8 @@
 			files = (
 				99A7C5BE26A9CF1200589758 /* DetailViewController.swift in Sources */,
 				99A357BB26AF24B800E48C16 /* LoginController.swift in Sources */,
-				99A7C5B626A89FD300589758 /* GetSpecificBillData.swift in Sources */,
-				99A7C5B426A89FBC00589758 /* UpcomingData.swift in Sources */,
+				99A7C5B626A89FD300589758 /* SpecificBillJSONFormat.swift in Sources */,
+				99A7C5B426A89FBC00589758 /* UpcomingJSONFormat.swift in Sources */,
 				9906736C2778D15A000C16F4 /* MemberJSONFormat.swift in Sources */,
 				99A7C5B826A8A01400589758 /* Constant.swift in Sources */,
 				99A357BD26AF24D400E48C16 /* SignupController.swift in Sources */,

@@ -93,7 +93,7 @@ struct LawManager {
         let decoder = JSONDecoder()
         
         do {
-            let decodedDataUpcoming = try decoder.decode(UpcomingData.self, from: lawData)
+            let decodedDataUpcoming = try decoder.decode(UpcomingJSONFormat.self, from: lawData)
             let length = decodedDataUpcoming.results[0].bills.count
             
             for i in 0...length-1 {
@@ -119,7 +119,7 @@ struct LawManager {
                 
         do {
                 
-            let decodedDataGetSpecific = try decoder.decode(UpcomingJSONFormat.self, from: lawData)
+            let decodedDataGetSpecific = try decoder.decode(SpecificBillJSONFormat.self, from: lawData)
             let short_title = decodedDataGetSpecific.results[0].short_title
             let title = decodedDataGetSpecific.results[0].title
             let summary = decodedDataGetSpecific.results[0].summary

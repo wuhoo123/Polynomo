@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct UpcomingData: Codable {
+struct UpcomingJSONFormat: Codable {
     let copyright: String
     let results: [Results]
 }

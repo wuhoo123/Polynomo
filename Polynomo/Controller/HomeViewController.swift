@@ -115,12 +115,12 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "FeedToPost", sender: self)
+        performSegue(withIdentifier: "FeedToDetail", sender: self)
         print(indexPath.row)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "FeedToPost" {
+        if segue.identifier == "FeedToDetail" {
             if let destination = segue.destination as? DetailViewController{
                 destination.post = post[(tableView.indexPathForSelectedRow?.row)!]
             }
