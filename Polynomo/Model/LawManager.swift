@@ -4,7 +4,6 @@
 //
 //  Created by William Wu on 7/21/21.
 //
-
 // The LawManager.swift is responsible for parsing the JSON data from the ProPublica API with both GET requests for upcoming laws and bills and the specific bill data.
 
 
@@ -124,7 +123,8 @@ struct LawManager {
             let title = decodedDataGetSpecific.results[0].title
             let summary = decodedDataGetSpecific.results[0].summary
             let sponsor = decodedDataGetSpecific.results[0].sponsor
-            let postItem = PostModel(title: title, shortTitle: short_title, summary: summary, billSponsor: sponsor)
+            let sponsor_id = decodedDataGetSpecific.results[0].sponsor_id
+            let postItem = PostModel(title: title, shortTitle: short_title, summary: summary, billSponsor: sponsor, sponsor_id: sponsor_id)
             post.append(postItem)
             //print(post)
             return post

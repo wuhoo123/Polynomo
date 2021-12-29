@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
     var post: PostModel?
     
     override func viewDidLoad() {
+        print(post!.sponsor_id)
         shortTitleText.text = post?.shortTitle
         
         if post?.summary == "" {
@@ -38,4 +39,13 @@ class DetailViewController: UIViewController {
         print("\(post!.billSponsor) pressed")
         performSegue(withIdentifier: Constant.Segue.detailToPost, sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constant.Segue.detailToPost {
+            if let destination = segue.destination as? DetailViewController{
+                //destination.id = post[(tableView.indexPathForSelectedRow?.row)!]
+            }
+        }
+    }
+    
 }

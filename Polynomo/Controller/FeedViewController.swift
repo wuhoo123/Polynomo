@@ -10,8 +10,13 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
+    var MemberManager = GetMember()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
     }
     
 

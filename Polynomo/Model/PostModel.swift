@@ -15,6 +15,7 @@ struct PostModel {
     let shortTitle: String
     let summary: String
     let billSponsor: String
+    let sponsor_id: String
     
 }
 

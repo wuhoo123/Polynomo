@@ -15,7 +15,6 @@ struct MemberJSONFormat: Codable {
 struct ResultsMember: Codable {
     let id: String
     let first_name: String
-    let middle_name: String
     let last_name: String
     let gender: String
     // let roles: [MemberRoles]
