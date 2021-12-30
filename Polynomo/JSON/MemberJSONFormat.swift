@@ -20,6 +20,14 @@ struct ResultsMember: Codable {
     // let roles: [MemberRoles]
 }
 
-struct MemberRoles {
-    
+struct MemberRoles: Codable {
+    let congress: String
+    let total_votes: Int
+    let missed_votes: Int
+    let total_present: Int
+    let bills_sponsored: Int
+    let bills_cosponsored: Int
+    let missed_votes_pct: Int
+    let votes_with_party_pct: Int
+    let votes_against_party_pct: Int
 }

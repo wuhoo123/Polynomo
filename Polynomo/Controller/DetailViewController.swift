@@ -30,7 +30,6 @@ class DetailViewController: UIViewController {
             longTitleText.text = ""
 
         }
-        
         sponsorButton.setTitle("👤 \(post!.billSponsor)", for: .normal)
 
     }
@@ -42,7 +41,8 @@ class DetailViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constant.Segue.detailToPost {
-            if let destination = segue.destination as? DetailViewController{
+            if let destination = segue.destination as? ProfileVC{
+                destination.sponsor_id = post?.sponsor_id
                 //destination.id = post[(tableView.indexPathForSelectedRow?.row)!]
             }
         }
