@@ -17,7 +17,8 @@ struct ResultsMember: Codable {
     let first_name: String
     let last_name: String
     let gender: String
-    // let roles: [MemberRoles]
+    let current_party: String
+    let roles: [MemberRoles]
 }
 
 struct MemberRoles: Codable {
@@ -27,7 +28,7 @@ struct MemberRoles: Codable {
     let total_present: Int
     let bills_sponsored: Int
     let bills_cosponsored: Int
-    let missed_votes_pct: Int
-    let votes_with_party_pct: Int
-    let votes_against_party_pct: Int
+    let missed_votes_pct: Double
+    let votes_with_party_pct: Double
+    // let votes_against_party_pct: Int
 }

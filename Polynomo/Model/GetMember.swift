@@ -58,17 +58,19 @@ struct GetMember {
             let id = decodedDataGetMember.results[0].id
             let first_name = decodedDataGetMember.results[0].first_name
             let last_name = decodedDataGetMember.results[0].last_name
+            let gender = genderAssignment(gender: decodedDataGetMember.results[0].gender)
+            let current_party = partyAssignment(party: decodedDataGetMember.results[0].current_party) 
             
-            var gender: String
-            if decodedDataGetMember.results[0].gender == "F" {
-                gender = "Female"
-            }
-            else {
-                gender = "Male"
-            }
-            print(first_name)
+            let congress = decodedDataGetMember.results[0].roles[0].congress
+            let total_votes = decodedDataGetMember.results[0].roles[0].total_votes
+            let missed_votes = decodedDataGetMember.results[0].roles[0].missed_votes
+            let total_present = decodedDataGetMember.results[0].roles[0].total_present
+            let bills_sponsored = decodedDataGetMember.results[0].roles[0].bills_sponsored
+            let bills_cosponsored = decodedDataGetMember.results[0].roles[0].bills_cosponsored
+            let missed_votes_pct = decodedDataGetMember.results[0].roles[0].missed_votes_pct
+            let votes_with_party_pct = decodedDataGetMember.results[0].roles[0].votes_with_party_pct
             
-            let memberItem = MemberModel(id: id, first_name: first_name, last_name: last_name, gender: gender)
+            let memberItem = MemberModel(id: id, first_name: first_name, last_name: last_name, gender: gender, current_party: current_party, congress: congress, total_votes: total_votes, missed_votes: missed_votes, total_present: total_present, bills_sponsored: bills_sponsored, bills_cosponsored: bills_cosponsored, missed_votes_pct: missed_votes_pct, votes_with_party_pct: votes_with_party_pct)
             return memberItem
             
         } catch {
@@ -76,6 +78,25 @@ struct GetMember {
             print("error")
             return nil
         }
+    }
+    
+    func genderAssignment(gender: String) -> String {
+        if gender == "F" {
+            return "Female"
+        }
+        else {
+            return "Male"
+        }
+    }
+    
+    func partyAssignment(party: String) -> String {
+        if party == "D" {
+            return "Democratic Party"
+        }
+        else if party == "R" {
+            return "Republican Party"
+        }
+        return ""
     }
     
     

@@ -13,11 +13,13 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var NameText: UILabel!
     @IBOutlet weak var IDText: UILabel!
     @IBOutlet weak var GenderText: UILabel!
+    @IBOutlet weak var Party: UILabel!
+    @IBOutlet weak var TotalVotes: UILabel!
     @IBOutlet weak var Spinner: UIActivityIndicatorView!
     
     var sponsor_id: String?
     var MemberManager = GetMember()
-    var member: MemberModel = MemberModel(id: " ", first_name: " ", last_name: " ", gender: " ")
+    var member: MemberModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,6 @@ class ProfileVC: UIViewController {
         MemberManager.delegate = self
         MemberManager.fetchMember(id: sponsor_id ?? "")
         
-        Spinner.hidesWhenStopped = true
         Spinner.startAnimating()
 
     }
@@ -41,6 +42,8 @@ extension ProfileVC: GetMemberDelegate {
             self.NameText.text = member.first_name + " " + member.last_name
             self.IDText.text = member.id
             self.GenderText.text = member.gender
+            self.Party.text = member.current_party
+            self.TotalVotes.text = String(member.total_votes)
             self.Spinner.stopAnimating()
             // group.leave()
         }
@@ -51,7 +54,7 @@ extension ProfileVC: GetMemberDelegate {
     }
     
     func didFailWithError(_ error: Error) {
-        print("ei")
+        print("didFailWithError")
         print(error)
     }
 }
