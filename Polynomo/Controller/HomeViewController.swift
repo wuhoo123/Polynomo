@@ -127,3 +127,12 @@ extension HomeViewController: UITableViewDelegate {
         }
     }
 }
+
+//MARK: - PostViewCellDelegate
+extension FeedViewController: PostViewCellDelegate {
+    func commentPressed() {
+        performSegue(withIdentifier: "FeedToComment", sender: self)
+    }
+    
+    
+}

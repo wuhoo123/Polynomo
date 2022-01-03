@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -54,10 +53,10 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhT-3T-3sd">
                                         <rect key="frame" x="0.0" y="0.0" width="89.5" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="heart" catalog="system"/>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        <state key="normal" title="👍">
+                                            <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
                                             <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Nd1-Yr-SO1"/>
@@ -66,24 +65,22 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baj-cO-T1Z">
                                         <rect key="frame" x="97.5" y="0.0" width="89" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="heart.slash" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                        </state>
+                                        <state key="normal" title="👎"/>
                                         <connections>
+                                            <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ykv-66-6D9"/>
                                             <action selector="dislikeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GDs-AW-UOh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-oR-BXK">
                                         <rect key="frame" x="194.5" y="0.0" width="89.5" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" systemColor="linkColor"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="bubble.left" catalog="system"/>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                        </state>
+                                        <state key="normal" title="💬"/>
                                         <connections>
-                                            <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="XWl-ij-1Um"/>
+                                            <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ys4-53-lp7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -124,9 +121,9 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="bubble.left" catalog="system" width="128" height="110"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="heart.slash" catalog="system" width="128" height="115"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

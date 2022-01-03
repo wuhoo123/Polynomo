@@ -12,6 +12,8 @@
 		9906736F277A70DA000C16F4 /* GetMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9906736E277A70DA000C16F4 /* GetMember.swift */; };
 		99067375277A7868000C16F4 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99067374277A7868000C16F4 /* ProfileVC.swift */; };
 		99067379277B927A000C16F4 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99067378277B927A000C16F4 /* MemberModel.swift */; };
+		991A1C3E2782810100A28468 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991A1C3D2782810100A28468 /* CommentVC.swift */; };
+		991A1C402782848800A28468 /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 991A1C3F2782848800A28468 /* Comments.storyboard */; };
 		997DB4F727529A3200ADE6FC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 997DB4F627529A3200ADE6FC /* Profile.storyboard */; };
 		998B9DE727659F1100F6ABD1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B9DE627659F1100F6ABD1 /* FeedViewController.swift */; };
 		99A035D0276572E500119338 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99A035CF276572E500119338 /* Detail.storyboard */; };
@@ -43,6 +45,8 @@
 		9906736E277A70DA000C16F4 /* GetMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMember.swift; sourceTree = "<group>"; };
 		99067374277A7868000C16F4 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		99067378277B927A000C16F4 /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
+		991A1C3D2782810100A28468 /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
+		991A1C3F2782848800A28468 /* Comments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comments.storyboard; sourceTree = "<group>"; };
 		997DB4F627529A3200ADE6FC /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		998B9DE627659F1100F6ABD1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		99A035CF276572E500119338 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				998B9DE627659F1100F6ABD1 /* FeedViewController.swift */,
 				99A7C5BD26A9CF1200589758 /* DetailViewController.swift */,
 				99067374277A7868000C16F4 /* ProfileVC.swift */,
+				991A1C3D2782810100A28468 /* CommentVC.swift */,
 				99A357BA26AF24B800E48C16 /* LoginController.swift */,
 				99A357BC26AF24D400E48C16 /* SignupController.swift */,
 			);
@@ -157,6 +162,7 @@
 				99A7C5BA26A8A18F00589758 /* PostViewCell.xib */,
 				99A7C59C26A8951200589758 /* Main.storyboard */,
 				99A035D12765730B00119338 /* Feed.storyboard */,
+				991A1C3F2782848800A28468 /* Comments.storyboard */,
 				99A035CF276572E500119338 /* Detail.storyboard */,
 				997DB4F627529A3200ADE6FC /* Profile.storyboard */,
 				99A7C5A126A8951300589758 /* LaunchScreen.storyboard */,
@@ -242,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991A1C402782848800A28468 /* Comments.storyboard in Resources */,
 				99A7C5A326A8951300589758 /* LaunchScreen.storyboard in Resources */,
 				997DB4F727529A3200ADE6FC /* Profile.storyboard in Resources */,
 				99A035D22765730B00119338 /* Feed.storyboard in Resources */,
@@ -309,6 +316,7 @@
 				99A7C5B426A89FBC00589758 /* UpcomingJSONFormat.swift in Sources */,
 				9906736C2778D15A000C16F4 /* MemberJSONFormat.swift in Sources */,
 				99A7C5B826A8A01400589758 /* Constant.swift in Sources */,
+				991A1C3E2782810100A28468 /* CommentVC.swift in Sources */,
 				99A357BD26AF24D400E48C16 /* SignupController.swift in Sources */,
 				998B9DE727659F1100F6ABD1 /* FeedViewController.swift in Sources */,
 				99A7C59B26A8951200589758 /* EnterViewController.swift in Sources */,

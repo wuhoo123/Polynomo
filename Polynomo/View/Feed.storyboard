@@ -162,11 +162,22 @@
                     <connections>
                         <outlet property="tableView" destination="Z6x-vm-i5M" id="WeP-p4-2vQ"/>
                         <segue destination="unk-Eg-S4P" kind="show" identifier="FeedToDetail" id="4nq-hS-4C8"/>
+                        <segue destination="Zns-Jg-cL9" kind="show" identifier="FeedToComment" id="k4m-mu-dGI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJv-Xv-83f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-549" y="1494"/>
+        </scene>
+        <!--CommentVC-->
+        <scene sceneID="Zay-3V-boW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Comments" referencedIdentifier="CommentVC" id="Zns-Jg-cL9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zQL-ox-x1Q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0b-c6-VeN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-765" y="2019"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="Yh7-gp-j5Z">
@@ -176,7 +187,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpx-eJ-j2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-549" y="2034"/>
+            <point key="canvasLocation" x="-309" y="2056"/>
         </scene>
     </scenes>
     <resources>

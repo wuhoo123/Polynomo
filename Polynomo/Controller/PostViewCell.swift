@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol PostViewCellDelegate {
+    func commentPressed()
+}
+
 class PostViewCell: UITableViewCell {
 
     @IBOutlet weak var postBackground: UIView!
@@ -17,6 +21,7 @@ class PostViewCell: UITableViewCell {
     @IBOutlet weak var sponsorButton: UIButton!
     @IBOutlet weak var dislikeButton: UIButton!
         
+    var delegate: PostViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +29,8 @@ class PostViewCell: UITableViewCell {
         
         // Adds rounded corners.
         postBackground.layer.cornerRadius = 5
+        likeButton.layer.cornerRadius = 5
+        dislikeButton.layer.cornerRadius = 5
 
     }
 
@@ -33,21 +40,20 @@ class PostViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func commentButtonPressed(_ sender: Any) {
-        
-    }
-
     
     @IBAction func likeButtonPressed(_ sender: Any) {
-        likeButton.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.normal)
-        dislikeButton.setImage(UIImage(systemName: "heart.slash"), for: .normal)
+        likeButton.backgroundColor = UIColor.systemGray6
         
     }
     
     @IBAction func dislikeButtonPressed(_ sender: Any) {
-        likeButton.setImage(UIImage(systemName: "heart"), for: UIControl.State.normal)
-        dislikeButton.setImage(UIImage(systemName: "heart.slash.fill"), for: .normal)
+        dislikeButton.backgroundColor = UIColor.systemGray6
         
+    }
+    
+    @IBAction func commentButtonPressed(_ sender: Any) {
+        print("hi")
+        self.delegate?.commentPressed()
     }
     
 }
