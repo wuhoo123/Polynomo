@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7G-bw-e0X" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="245.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="263.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8H-Zo-JUW">
                                                 <rect key="frame" x="20" y="20" width="374" height="24"/>
@@ -74,31 +73,29 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Hl-Bb-xJF" userLabel="Button Stack">
-                                                <rect key="frame" x="20" y="209.5" width="374" height="26"/>
+                                                <rect key="frame" x="20" y="209.5" width="374" height="44"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSX-Tn-dIe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="tintColor" systemColor="systemGreenColor"/>
-                                                        <state key="normal">
-                                                            <imageReference key="image" image="heart" catalog="system"/>
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                                        </state>
+                                                        <state key="normal" title="👍"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enT-EI-zLq">
-                                                        <rect key="frame" x="127.5" y="0.0" width="119" height="26"/>
+                                                        <rect key="frame" x="127.5" y="0.0" width="119" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" image="heart.slash" catalog="system">
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                                        </state>
+                                                        <state key="normal" title="👎"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNm-cv-h6l">
-                                                        <rect key="frame" x="254.5" y="0.0" width="119.5" height="26"/>
+                                                        <rect key="frame" x="254.5" y="0.0" width="119.5" height="44"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                         <color key="tintColor" systemColor="linkColor"/>
-                                                        <state key="normal">
-                                                            <imageReference key="image" image="bubble.left" catalog="system"/>
-                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                                                        </state>
+                                                        <state key="normal" title="💬"/>
+                                                        <connections>
+                                                            <action selector="commentButtonPressed:" destination="a5Z-r5-3JW" eventType="touchUpInside" id="PxR-5D-Npz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -160,6 +157,7 @@
                         <outlet property="sponsorButton" destination="Gn6-wU-tOf" id="sWT-19-VL3"/>
                         <outlet property="summaryText" destination="we7-mu-s7s" id="YO2-u1-lGc"/>
                         <segue destination="d2q-aH-zXf" kind="show" identifier="DetailToProfile" id="27U-gR-qgu"/>
+                        <segue destination="ENz-mt-Wcc" kind="show" identifier="DetailToComment" id="qAq-fg-wpK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qyz-ZT-ohV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -176,11 +174,18 @@
             </objects>
             <point key="canvasLocation" x="3639" y="-182"/>
         </scene>
+        <!--CommentVC-->
+        <scene sceneID="0XT-gX-Jqi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Comments" referencedIdentifier="CommentVC" id="ENz-mt-Wcc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3T4-Hx-af8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6CQ-Hh-aN4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3638" y="-102"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="bubble.left" catalog="system" width="128" height="110"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="heart.slash" catalog="system" width="128" height="115"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

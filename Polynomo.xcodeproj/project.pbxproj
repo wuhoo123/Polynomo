@@ -162,8 +162,8 @@
 				99A7C5BA26A8A18F00589758 /* PostViewCell.xib */,
 				99A7C59C26A8951200589758 /* Main.storyboard */,
 				99A035D12765730B00119338 /* Feed.storyboard */,
-				991A1C3F2782848800A28468 /* Comments.storyboard */,
 				99A035CF276572E500119338 /* Detail.storyboard */,
+				991A1C3F2782848800A28468 /* Comments.storyboard */,
 				997DB4F627529A3200ADE6FC /* Profile.storyboard */,
 				99A7C5A126A8951300589758 /* LaunchScreen.storyboard */,
 			);

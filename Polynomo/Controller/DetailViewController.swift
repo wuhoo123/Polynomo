@@ -48,4 +48,8 @@ class DetailViewController: UIViewController {
         }
     }
     
+    @IBAction func commentButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "DetailToComment", sender: self)
+    }
+    
 }
