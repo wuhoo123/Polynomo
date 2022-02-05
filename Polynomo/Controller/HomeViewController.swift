@@ -14,9 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var lawManager = LawManager()
-    
     var post: [PostModel] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -129,8 +127,9 @@ extension HomeViewController: UITableViewDelegate {
 }
 
 //MARK: - PostViewCellDelegate
-extension FeedViewController: PostViewCellDelegate {
+extension HomeViewController: PostViewCellDelegate {
     func commentPressed() {
+        print("hilo")
         performSegue(withIdentifier: "FeedToComment", sender: self)
     }
     

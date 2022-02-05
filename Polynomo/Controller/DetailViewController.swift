@@ -14,6 +14,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var longTitleText: UILabel!
     @IBOutlet weak var summaryText: UILabel!
     @IBOutlet weak var sponsorButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var dislikeButton: UIButton!
+    
     
     var post: PostModel?
     
@@ -31,6 +34,10 @@ class DetailViewController: UIViewController {
 
         }
         sponsorButton.setTitle("👤 \(post!.billSponsor)", for: .normal)
+        
+        // Adds rounded corners.
+        likeButton.layer.cornerRadius = 5
+        dislikeButton.layer.cornerRadius = 5
 
     }
 
@@ -52,4 +59,13 @@ class DetailViewController: UIViewController {
         performSegue(withIdentifier: "DetailToComment", sender: self)
     }
     
+    @IBAction func likeButtonPressed(_ sender: Any) {
+        likeButton.backgroundColor = UIColor.systemGray6
+        
+    }
+    
+    
+    @IBAction func dislikeButtonPressed(_ sender: Any) {
+        dislikeButton.backgroundColor = UIColor.systemGray6
+    }
 }
