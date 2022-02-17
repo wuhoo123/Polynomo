@@ -5,6 +5,10 @@
 //  Created by William Wu on 7/21/21.
 //
 
+/**
+A list of constants.
+*/
+
 import Foundation
 
 struct Constant {
