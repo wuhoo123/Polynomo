@@ -28,7 +28,7 @@ class PostViewCell: UITableViewCell {
         // Initialization code
         
         // Adds rounded corners.
-        sponsorButton.backgroundColor = UIColor.red.withAlphaComponent(0.4)
+        // sponsorButton.backgroundColor = UIColor.red.withAlphaComponent(0.4)
         sponsorButton.layer.cornerRadius = 3
         postBackground.layer.cornerRadius = 5
         likeButton.layer.cornerRadius = 5
