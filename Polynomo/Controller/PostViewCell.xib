@@ -23,17 +23,17 @@
                         <rect key="frame" x="5" y="5" width="324" height="170"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqV-rT-bPy">
-                                <rect key="frame" x="15" y="10" width="72" height="24"/>
+                                <rect key="frame" x="15" y="10" width="81" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="w0l-3f-VfC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Bob Dugan">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OyU-MD-bnD" userLabel="Text Stack">
-                                <rect key="frame" x="15" y="39" width="294" height="70"/>
+                                <rect key="frame" x="15" y="39" width="294" height="82"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVJ-cv-Iuc">
                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="24"/>
@@ -41,8 +41,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="edkmkmdekmdkemdemdkmekdmekmdkemdkemdkemdkmdkemd dclmdlm" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-WP-i2x">
-                                        <rect key="frame" x="0.0" y="31.5" width="286.5" height="38.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Summary" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-WP-i2x">
+                                        <rect key="frame" x="0.0" y="62.5" width="94.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -53,13 +53,12 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ohx-gH-5Ph" userLabel="Button Stack">
-                                <rect key="frame" x="20" y="119" width="284" height="41"/>
+                                <rect key="frame" x="20" y="131" width="284" height="29"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhT-3T-3sd">
-                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <color key="tintColor" systemColor="systemGreenColor"/>
-                                        <state key="normal" title="👍">
+                                        <state key="normal" image="hand.thumbsup" catalog="system">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -67,24 +66,31 @@
                                             <action selector="likeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aKy-gd-U7w"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baj-cO-T1Z">
-                                        <rect key="frame" x="97.5" y="0.0" width="89" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baj-cO-T1Z">
+                                        <rect key="frame" x="73" y="0.0" width="65" height="29"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="👎"/>
+                                        <state key="normal" image="hand.thumbsdown" catalog="system"/>
                                         <connections>
                                             <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ykv-66-6D9"/>
                                             <action selector="dislikeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GDs-AW-UOh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-oR-BXK">
-                                        <rect key="frame" x="194.5" y="0.0" width="89.5" height="41"/>
+                                        <rect key="frame" x="146" y="0.0" width="65" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="tintColor" systemColor="linkColor"/>
-                                        <state key="normal" title="💬"/>
+                                        <state key="normal" image="bubble.left" catalog="system"/>
                                         <connections>
                                             <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ys4-53-lp7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZh-fV-FnB">
+                                        <rect key="frame" x="219" y="0.0" width="65" height="29"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                        <connections>
+                                            <action selector="commentButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eR1-Hx-CoB"/>
+                                            <action selector="dislikeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gwf-F6-J8L"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -125,6 +131,10 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="bubble.left" catalog="system" width="128" height="110"/>
+        <image name="hand.thumbsdown" catalog="system" width="128" height="128"/>
+        <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -136,12 +146,6 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
