@@ -95,7 +95,7 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constant.cellIdentifier, for: indexPath) as! PostViewCell
         
         cell.shortTitleText.text = postData.shortTitle
-        cell.sponsorButton.setTitle("👤 \(postData.billSponsor)", for: .normal)
+        cell.sponsorButton.setTitle("\(postData.billSponsor)", for: .normal)
         
         if postData.summary == "" {
             cell.shortSummaryText.text = "Summary is not available yet. Here is long title: \(postData.title)"

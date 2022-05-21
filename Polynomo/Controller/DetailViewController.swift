@@ -33,7 +33,7 @@ class DetailViewController: UIViewController {
             longTitleText.text = ""
 
         }
-        sponsorButton.setTitle("👤 \(post!.billSponsor)", for: .normal)
+        sponsorButton.setTitle("\(post!.billSponsor)", for: .normal)
         
         // Adds rounded corners.
         likeButton.layer.cornerRadius = 5

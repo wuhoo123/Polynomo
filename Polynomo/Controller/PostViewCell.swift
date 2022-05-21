@@ -20,7 +20,8 @@ class PostViewCell: UITableViewCell {
     @IBOutlet weak var shortSummaryText: UILabel!
     @IBOutlet weak var sponsorButton: UIButton!
     @IBOutlet weak var dislikeButton: UIButton!
-        
+    @IBOutlet weak var voteRatioBar: UIProgressView!
+    
     var delegate: PostViewCellDelegate?
     
     override func awakeFromNib() {
@@ -29,6 +30,7 @@ class PostViewCell: UITableViewCell {
         
         // Adds rounded corners.
         // sponsorButton.backgroundColor = UIColor.red.withAlphaComponent(0.4)
+        voteRatioBar.layer.cornerRadius = 5
         sponsorButton.layer.cornerRadius = 3
         postBackground.layer.cornerRadius = 5
         likeButton.layer.cornerRadius = 5
